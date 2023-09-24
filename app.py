@@ -26,6 +26,7 @@ def init() -> dict:
     
 @app.handler()
 def handler(context: dict, request: Request) -> Response:
+    
     """Handle a request to generate text from a prompt."""
     model = context.get("model")
     tokenizer = context.get("tokenizer")
